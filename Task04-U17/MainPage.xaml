@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="Task04_U17.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Task04_U17"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <RelativePanel Grid.Row="1" MinHeight="300">
+            <Rectangle Name="RedRec"
+                   Width="200" 
+                   Height="200" 
+                   Fill="Red" 
+                   RelativePanel.AlignRightWithPanel="True"/>
+
+            <Rectangle Name="BlueRec" 
+                       Width="100" 
+                       Height="100" 
+                       Fill="Blue" 
+                       RelativePanel.LeftOf="RedRec"/>
+
+            <Rectangle Name="GreenRec" 
+                       Width="100" 
+                       Height="100" 
+                       Fill="Green" 
+                       RelativePanel.AlignVerticalCenterWith="RedRec"
+                       RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+
+            <Rectangle Name="YellowRec" 
+                       MinWidth="100" 
+                       MinHeight="100" 
+                       Fill="Yellow" 
+                       RelativePanel.AlignBottomWithPanel="True"
+                       RelativePanel.AlignTopWith="PurpleRec"/>
+
+            <Rectangle Name="PurpleRec" 
+                       MinWidth="100" 
+                       MinHeight="100" 
+                       Fill="Purple" 
+                       RelativePanel.Below="RedRec"
+                       RelativePanel.AlignRightWith="RedRec"
+                       RelativePanel.AlignLeftWith="GreenRec"/>
+        </RelativePanel>
+
+        
+        
+    </Grid>
+</Page>
