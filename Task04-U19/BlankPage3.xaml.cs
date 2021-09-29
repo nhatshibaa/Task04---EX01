@@ -27,6 +27,13 @@ namespace Task04_U19
             this.InitializeComponent();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            var value = (string)e.Parameter;
+            ValueTextBox.Text = value;
+        }
+
+
         private void HyperlinkBtn1_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(BlankPage1));

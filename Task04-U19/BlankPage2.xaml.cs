@@ -34,7 +34,7 @@ namespace Task04_U19
 
         private void HyperlinkBtn3_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(BlankPage3));
+            Frame.Navigate(typeof(BlankPage3), ValueTextBox.Text);
         }
     }
 }

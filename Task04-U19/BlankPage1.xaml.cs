@@ -31,7 +31,6 @@ namespace Task04_U19
         {
             Frame.Navigate(typeof(BlankPage2));
         }
-
         private void HyperlinkBtn3_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(BlankPage3));

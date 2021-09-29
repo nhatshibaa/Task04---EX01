@@ -10,6 +10,7 @@
 
     <StackPanel>
         <TextBlock Text="Page 2"/>
+        <TextBox Width="200" Name="ValueTextBox"/>
         <HyperlinkButton Content="Go to page 1" Click="HyperlinkBtn1_Click"/>
         <HyperlinkButton Content="Go to page 3" Click="HyperlinkBtn3_Click"/>
     </StackPanel>
